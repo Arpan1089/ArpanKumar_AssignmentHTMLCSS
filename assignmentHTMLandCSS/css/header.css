@@ -1,0 +1,117 @@
+body{
+   margin: 0px;
+}
+
+.header {
+    background-color: darkgrey;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content{
+ font-size: 30px;
+ font-weight: bold;
+ margin-left: 85%;
+
+}
+
+.navbar-container{
+    background-color: lightgray;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .footer-content{
+      min-height: 50px;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .img-animation {
+    border: 1px solid gray;
+    position: relative;
+    height: 330px;
+    width: 592px;
+    animation-name: background;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+   
+    
+  }
+  
+   @keyframes background {
+    0% {
+      background-image: url('../Images/Animation/ani1.jpg');
+    }
+    25% {
+        background-image: url('../Images/Animation/ani2.jpg');
+      }
+      50% {
+        background-image: url('../Images/Animation/ani3.jpg');
+      }
+      75% {
+        background-image: url('../Images/Animation/ani4.jpg');
+      }
+      100% {
+        background-image: url('../Images/Animation/ani5.jpg');
+      }
+  }
