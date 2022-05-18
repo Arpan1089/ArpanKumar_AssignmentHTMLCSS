@@ -6,20 +6,20 @@ body{
     background-color: darkgrey;
     min-height: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .header-content{
  font-size: 30px;
  font-weight: bold;
- margin-left: 85%;
+ padding-right: 10%;
 
 }
 
 .navbar-container{
     background-color: lightgray;
-    height: 40px;
+   
     display: flex;
     align-items: center;
 }
@@ -82,17 +82,22 @@ li a, .dropbtn {
       display: flex;
       justify-content: center;
       align-items: center;
+     
+      width: 100%;
+      bottom: 0%;
   }
 
   .img-animation {
-    border: 1px solid gray;
+    border: 2px solid steelblue;
     position: relative;
-    height: 330px;
-    width: 592px;
+    height: 90vh;
+    width: 100%;
     animation-name: background;
-    animation-delay: 1s;
-    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
     
    
     
@@ -100,10 +105,10 @@ li a, .dropbtn {
   
    @keyframes background {
     0% {
-      background-image: url('../Images/Animation/ani1.jpg');
+      background-image: url('../Images/Animation/ani1.jpg'); 
     }
     25% {
-        background-image: url('../Images/Animation/ani2.jpg');
+        background-image: url('../Images/Animation/ani2.png');
       }
       50% {
         background-image: url('../Images/Animation/ani3.jpg');
@@ -115,3 +120,50 @@ li a, .dropbtn {
         background-image: url('../Images/Animation/ani5.jpg');
       }
   }
+
+  .cart-section{
+      display: inline-block;
+      border: 2px solid lightgray;
+      margin-bottom: 2%;
+      margin-right: 2%;
+      width: 21%;
+    
+     
+  }
+
+  .rupees{
+      display: block;
+      color: skyblue;
+  }
+
+  .margin {
+    margin-left: 1%;
+  }
+  .add-button{
+      background-color:lightblue;
+      width: 100%;
+      color: orange;
+      
+  }
+
+
+  .add-button:active, 
+ .addButton:focus 
+ {
+     border:2px solid rgb(0, 255, 76); /* here configure as your needs */
+     background-color: rgb(250, 234, 230);
+  }
+
+  img.custom:hover,
+img.custom:focus {
+  width: 250px;
+  height: 400px;
+}
+
+.header-padding{
+    padding-left: 3%;
+}
+
+.section-display{
+    display: flex;
+}
