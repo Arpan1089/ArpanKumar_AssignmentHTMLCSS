@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+   <title>LabTest</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="LabTest.css">
+</head>
+<body>
+   <section id="block">
+      <form action="" id="lab-form">
+         <img src="Images/Lab-Test/lab-test.jpg" />
+         <h2>1.contact details</h2>
+         <input type="text"  title="Patient_Name" placeholder="Full Name" required/>
+         <input type="number"  title="Patient_Id" placeholder="Patient Id if exists" required/>
+         <input type="number"  title="contact_no" placeholder="Contact Number" required/>
+         <input type="email"  title="email_id" placeholder="Email" required/>
+         <h2>2.Adress Details</h2>
+         <input type="text"  title="House_no" placeholder="House No." required/>
+         <input type="text"  title="street" placeholder="Street" required/>
+         <input type="text"  title="area" placeholder="Area" required/>
+         <h4>District</h4>
+         <select name="District"  id="district" required>
+            <option value="">Choose</option>
+            <option value="MH">Maharashtra</option>
+            <option value="BH">Bihar</option>
+            <option value="JH">Jharkhand</option>
+         </select>
+         <h2>3.Choose the test type</h2>
+         <p>Check atleast one checkbox</p>
+         <input type="radio" id="CBC" name="CB" value="CBC">
+           <label  for="CBC">CBC</label> </br>
+         <input type="radio" id="Urine" name="urin" value="urine">
+           <label for="CBC">Complete Urine</label></br>
+         <input type="radio" id="Lipid" name="lipi" value="lipid">
+           <label for="CBC">Lipid Profile</label></br>
+         <input type="radio" id="TSH" name="TSH" value="TSH">
+           <label for="CBC">Thyoride Stimulation harmon(TSH)</label></br>
+         <input type="radio" id="glucose" name="glucose" value="glucose">
+           <label for="CBC">Glucose Test</label>
+         <h2>Do you want a hard copy of the report also ?</h2>
+         <input type="radio" id="yes" name="yes" value="yes" required>
+           <label for="yes">Yes</label>
+         <input type="radio" id="no" name="no" value="no" required>
+           <label for="no">No</label>
+         <h2>Select your comfortable date and time :</h2>
+         <input  type="date" placeholder="Date" required/>
+         <br>
+         <input type="time" placeholder="Time" required/>
+      </form>
+      <div class="buttons">
+         <button form="lab-form">Reset</button>
+         <button form="lab-form">Submit</button>
+      </div>
+   </section>
+</body>
